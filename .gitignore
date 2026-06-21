@@ -1,0 +1,8 @@
+.env
+downloads/
+logs/
+*.log
+schema_dump.json
+__pycache__/
+*.pyc
+.DS_Store
