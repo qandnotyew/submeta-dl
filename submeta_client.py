@@ -113,7 +113,7 @@ class SubmetaClient:
             "username": self.username,
             "password": self.password,
         }).encode()
-        headers = {**HEADERS_BASE, "Content-Type": "application/json"}
+        headers = {**HEADERS_BASE, "Content-Type": "application/json", "X-CSRF-Protection": "1"}
         req = Request(self.auth_url, data=payload, headers=headers, method="POST")
 
         try:
